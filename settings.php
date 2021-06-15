@@ -1,13 +1,16 @@
 <?php
 
 /** The name of the database for CouponsCMS coupon site */
-define('DB_NAME', 'hometo27_htoffers');
+// define('DB_NAME', 'hometo27_htoffers');
+define('DB_NAME', 'htoffers_db');
 
 /** MySQL database username */
-define('DB_USER', 'hometo27_htoffers');
+// define('DB_USER', 'hometo27_htoffers');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'XlwlSkwerljCWkw2041SWkw#2$$2$$');
+// define('DB_PASSWORD', 'XlwlSkwerljCWkw2041SWkw#2$$2$$');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
