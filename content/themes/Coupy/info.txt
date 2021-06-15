@@ -1,0 +1,3 @@
+Version: 1.1
+Published by: CouponsCMS http://couponscms.com
+Description: Coupy theme for CouponsCMS v7.00

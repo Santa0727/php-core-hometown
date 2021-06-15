@@ -1,0 +1,131 @@
+.modal .modal-content {
+    border-radius: 0;
+}
+
+.modal .modal-header {
+    border-bottom: none;
+}
+
+.modal .modal-top {
+    padding: 15px;
+}
+
+.modal .modal-header button.close {
+    font-size: 24px;
+}
+
+.modal .modal-header button.close:hover {
+    background: none!important;
+}
+
+.modal .modal-footer {
+    text-align: center;
+    border-top: none;
+}
+
+.modal .modal-body .store-info {
+    margin: 20px 0;
+}
+
+.modal .modal-body .store-info img {
+    display: block;
+    max-height: 50px;
+    margin: 0 auto 10px auto;
+}
+
+.modal .subscribe_form_modal .col-md-9 {
+    padding-right: 2.5px;
+}
+
+.modal .subscribe_form_modal .col-md-3 {
+    padding-left: 2.5px;
+}
+
+.modal .subscribe_form_modal button {
+    width: 100%;
+}
+
+.modal .share-links > span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal .share-links ul li,
+.modal-vote li {
+    display: inline-block;
+}
+
+.modal .share-links ul li:not(:last-child),
+.modal-vote li:not(:last-child) {
+    margin-right: 5px;
+}
+
+.modal .share-links ul:not(.modal-vote) li a {
+    display: block;
+    line-height: 30px;
+    min-width: 32px;
+    border: 1px solid #232323;
+    border-radius: 50%;
+}
+
+.modal ul.modal-vote li a i {
+    font-size: 14px;
+}
+
+.modal-info {
+    text-align: center;
+}
+
+.modal-info .butt {
+    margin-top: 15px;
+}
+
+.modal-msg {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-msg .arrow-down {
+    position:absolute;
+    bottom: -10px;
+    right: calc( 50% - 5px);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f5f5f5;
+}
+
+.modal-code {
+    position: relative;
+    line-height: 50px;     
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px dashed #232323;
+}
+
+.modal-code .modal-copy-me {
+    position: absolute;
+    font-size: 14px;
+    margin-left: 20px;
+    opacity: 0;
+}
+
+.modal-code:hover .modal-copy-me {
+    opacity: 1;
+}
+
+.modal .ajax-subscribe-result .msg-alert,
+.modal .ajax-subscribe-result .msg-success {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width : 992px) {
+.modal .subscribe_form_modal .col-md-9 {
+    padding-right: 15px;
+}
+
+.modal .subscribe_form_modal .col-md-3 {
+    padding-left: 15px;
+}
+}

@@ -1,0 +1,71 @@
+a:hover,
+.product .img-preview .heart a,
+.coupon .img-preview .heart a,
+.store .img-preview .heart a,
+.store .img-preview .favorite a,
+.user-menu li.active > a,
+.user-header a:hover,
+.coupon .link .code > i {
+    color: #2A7D4F;
+}
+
+.items-list h5 span,
+.search-container .sc-title h2 span,
+.product .info .price .current-price .int-price,
+.product .info .price .current-price .dec-price {
+    color: mediumseagreen!important;
+}
+
+button,
+a.butt,
+.main-nav > li:hover > a,
+.main-nav > li.active > a,
+.main-nav li.child-active > a,
+.main-nav > li ul,
+.search-container input:focus,
+.product .info .price .discount,
+.main-nav > li.menu-li-right:hover > a,
+.category-select > a:hover {
+    background-color: #3cb371 !important;
+    border-radius: 1rem;
+}
+
+button:hover,
+a.butt:hover,
+a.button-disabled,
+button[disabled],
+.main-nav > li ul li:hover,
+.main-nav > li ul li.active,
+.main-nav > li.menu-li-right > a,
+footer .social-links li a:hover,
+.category-select > ul a:hover {
+    background-color: #2A7D4F!important;
+}
+
+.pagination > li > a,
+.pagination > li > span,
+.letters-container .letters li a,
+.store-logos-list a:hover {
+    border-color: mediumseagreen!important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.nice-info,
+.coupon .link .code,
+.modal-share li a:hover {
+    border-color: #2A7D4F!important;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > .active > a,
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.letters-container .letters li a:hover,
+.letters-container .letters li.selected a  {
+    background-color: #2A7D4F!important;
+    border-color: #2A7D4F!important;
+}

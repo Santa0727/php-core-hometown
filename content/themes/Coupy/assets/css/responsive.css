@@ -1,0 +1,83 @@
+@media screen and (max-width: 992px) {
+
+.search-container .sc-title {
+    padding-top: 100px;
+}
+
+.search-container .sc-title h2 {
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.search-container .sc-form {
+    padding-bottom: 100px;
+}
+
+.sc-form .sc-select:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.search-container .sc-select ul {
+    position: relative;
+}
+
+.items-list {
+    padding: 100px 0;
+}
+
+.items-list h2 {
+    font-size: 30px;
+}
+
+.product .img-preview {
+    height: 190px;
+}
+
+nav {
+    padding: 5px 0;
+}
+
+nav .main-nav li {
+    width: 100%;
+    border-bottom: 1px solid #f0efef;
+}
+
+nav .main-nav li a {
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 0;
+}
+
+nav .main-nav li ul {
+    position: relative;
+    left: 0;
+}
+
+.mobile-nav {
+    padding-top: 5px;
+}
+
+.push-container {
+    max-height: 100%;
+}
+
+.push-left, .push-right {
+    position: relative;
+    max-height: 100%;
+    overflow: none;
+}
+
+.page-intro {
+    padding: 50px 0;
+}
+
+.page-intro h1 {
+    font-size: 32px;
+}
+
+footer.main ul:not(.site-languages) {
+    margin-bottom: 30px;
+}
+
+}
