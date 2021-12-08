@@ -39,6 +39,23 @@ $monthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
         align-content: center;
         padding: 3% 10px 3% 10px;
     }
+
+    .winners-table th {
+        color: black;
+        font-size: larger;
+        font-weight: bolder;
+        background-color: #4d8c2a;
+    }
+
+    .winners-table tr.even td.no {
+        background-color: lightblue;
+        color: black;
+    }
+
+    .winners-table tr.odd td.no {
+        background-color: lightpink;
+        color: black;
+    }
 </style>
 
 <div class="page-intro">
@@ -48,7 +65,8 @@ $monthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 </div>
 
 <div class="container pt50 pb50">
-    <table class="table table-bordered">
+    <h2 class="text-center">Congratulations to all our winners. Please call 949-200-7518 to claim your prize.</h2>
+    <table class="table table-bordered winners-table">
         <thead>
             <tr>
                 <th>Month</th>
@@ -60,8 +78,8 @@ $monthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
             <?php for ($i = 12; $i > 0; $i--) if (!empty($items[$i])) {
                 foreach ($items[$i] as $j => $x) {
             ?>
-                    <tr>
-                        <?php if ($j == 0) echo "<td rowspan=" . count($items[$i]) . ">" . $monthLabels[$i - 1] . "</td>"; ?>
+                    <tr class="<?php echo ($i % 2 == 0 ? 'even' : 'odd'); ?>">
+                        <?php if ($j == 0) echo "<td rowspan=" . count($items[$i]) . " class='no'>" . $monthLabels[$i - 1] . "</td>"; ?>
                         <td><?php echo $x['name']; ?></td>
                         <td><?php echo $x['comment'] ?></td>
                     </tr>

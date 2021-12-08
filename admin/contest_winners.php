@@ -67,6 +67,7 @@ if (!empty($_GET['action']) && $_GET['action'] == 'delete') {
 }
 
 $winners = $contestWinner->getItems();
+$monthLabels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 ?>
 
@@ -84,6 +85,18 @@ $winners = $contestWinner->getItems();
 
     .winners-table td {
         text-align: center;
+    }
+
+    .winners-table th {
+        color: black;
+        font-size: larger;
+        font-weight: bolder;
+        background-color: #4d8c2a;
+    }
+
+    .winners-table td.no {
+        background-color: yellow;
+        color: black;
     }
 </style>
 <div class="title">
@@ -110,8 +123,8 @@ $winners = $contestWinner->getItems();
                         <tbody>
                             <?php foreach ($winners as $i => $item) { ?>
                                 <tr>
-                                    <td><?php echo ($i + 1); ?></td>
-                                    <td><?php echo $item->month; ?></td>
+                                    <td class="no"><?php echo ($i + 1); ?></td>
+                                    <td><?php echo $monthLabels[$item->month - 1]; ?></td>
                                     <td><?php echo $item->name; ?></td>
                                     <td><?php echo $item->comment; ?></td>
                                     <td>
@@ -132,7 +145,7 @@ $winners = $contestWinner->getItems();
                             <label for="month">Month</label>
                             <select name="month" id="month" class="form-control" required>
                                 <?php for ($i = 1; $i <= 12; $i++) { ?>
-                                    <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                                    <option value="<?php echo $i; ?>"><?php echo $monthLabels[$i - 1]; ?></option>
                                 <?php } ?>
                             </select>
                         </div>
@@ -143,7 +156,7 @@ $winners = $contestWinner->getItems();
                         <div class="form-group">
                             <label for="comment">Type</label>
                             <select name="comment" id="comment" class="form-control" required>
-                                <option value="Normal">Normal</option>
+                                <option value="Gift Card">Gift Card</option>
                                 <option value="Cash">Cash</option>
                             </select>
                         </div>
